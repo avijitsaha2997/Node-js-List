@@ -3,5 +3,5 @@
 //__dirname  - path to current directory
 //__filename - file name with current directory
 // require   - functions to use curretn module (file)
-//module     - info about current module (ComminJS)
+//module     - info about current module (CommonJS)
 //process    - info about env where the program is being executed
