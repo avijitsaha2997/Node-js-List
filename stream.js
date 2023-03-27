@@ -9,7 +9,12 @@ const readableStream = fs.createReadStream("./file.txt",{
 
 const writeableStream = fs.createWriteStream("./file2.txt");
 
+
+// Method 1
 readableStream.on("data", (chunk)=>{
     console.log(chunk);
     writeableStream.write(chunk)
 })
+
+//Method 2
+readableStream.pipe(writeableStream);
